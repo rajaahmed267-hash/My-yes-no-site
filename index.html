@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Will You Be My Valentine?</title>
+    <title>i love my chuza </title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -54,3 +54,17 @@
     </script>
 </body>
 </html>
+document.getElementById('yesBtn').onclick = function() {
+    document.querySelector('h1').innerHTML = 'I love you too! ❤️❤️❤️';
+    // You can also change the background color here
+    document.body.style.backgroundColor = '#ffb6c1';
+};
+
+// Function for the 'No' button movement
+function moveButton() {
+    var btn = document.getElementById("noBtn");
+    var x = Math.random() * (window.innerWidth - btn.offsetWidth - 20) + 10;
+    var y = Math.random() * (window.innerHeight - btn.offsetHeight - 20) + 10;
+    btn.style.left = x + "px";
+    btn.style.top = y + "px";
+}
