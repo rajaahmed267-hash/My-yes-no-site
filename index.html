@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>i love my chuza </title>
+    <title>My Chuja</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
             margin-top: 100px;
-            background-color: #f7dcd6;
+            background-color: #ffb6c1; /* Pink background */
+            overflow: hidden;
+            position: relative;
         }
         h1 {
             color: #d11a2a;
@@ -34,13 +36,24 @@
             color: white;
             position: absolute;
         }
+        .emoji-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            pointer-events: none;
+            font-size: 50px;
+        }
     </style>
 </head>
 <body>
-    <h1 muja peak mila gii👀?</h1>
+    <div class="emoji-bg">🦄⭐❤️✨🦄⭐❤️</div>
+    <h1>My Chuja?</h1>
     <div class="container">
-        <button id="yesBtn" onclick="alert('I love you too!')">yes</button>
-        <button id="noBtn" onmouseover="moveButton()">no</button>
+        <button id="yesBtn" onclick="alert('muja peak mila ge👀? ❤️❤️❤️')">Yes</button>
+        <button id="noBtn" onmouseover="moveButton()">No</button>
     </div>
 
     <script>
@@ -54,17 +67,3 @@
     </script>
 </body>
 </html>
-document.getElementById('yesBtn').onclick = function() {
-    document.querySelector('h1').innerHTML = 'I love you too! ❤️❤️❤️';
-    // You can also change the background color here
-    document.body.style.backgroundColor = '#ffb6c1';
-};
-
-// Function for the 'No' button movement
-function moveButton() {
-    var btn = document.getElementById("noBtn");
-    var x = Math.random() * (window.innerWidth - btn.offsetWidth - 20) + 10;
-    var y = Math.random() * (window.innerHeight - btn.offsetHeight - 20) + 10;
-    btn.style.left = x + "px";
-    btn.style.top = y + "px";
-}
